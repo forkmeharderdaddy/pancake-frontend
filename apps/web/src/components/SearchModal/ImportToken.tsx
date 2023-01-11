@@ -1,16 +1,28 @@
 import { useState } from 'react'
 import { Token, Currency, ChainId } from '@pancakeswap/sdk'
-import { Button, Text, ErrorIcon, Flex, Message, Checkbox, Link, Tag, Grid, BscScanIcon } from '@pancakeswap/uikit'
+import {
+  Button,
+  Text,
+  ErrorIcon,
+  Flex,
+  Message,
+  Checkbox,
+  Link,
+  Tag,
+  Grid,
+  BscScanIcon,
+  ListLogo,
+} from '@pancakeswap/uikit'
 import { AutoColumn } from 'components/Layout/Column'
 import { useAddUserToken } from 'state/user/hooks'
 import { getBlockExploreLink, getBlockExploreName } from 'utils'
 import truncateHash from '@pancakeswap/utils/truncateHash'
 import { useCombinedInactiveList } from 'state/lists/hooks'
-import { ListLogo } from 'components/Logo'
 import { useTranslation } from '@pancakeswap/localization'
 import { chains } from 'utils/wagmi'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { WrappedTokenInfo } from '@pancakeswap/token-lists'
+import { BAD_SRCS } from '../Logo/constants'
 
 interface ImportProps {
   tokens: Token[]
@@ -59,7 +71,7 @@ function ImportToken({ tokens, handleCurrencySelect }: ImportProps) {
                 variant="success"
                 outline
                 scale="sm"
-                startIcon={list.logoURI && <ListLogo logoURI={list.logoURI} size="12px" />}
+                startIcon={list.logoURI && <ListLogo badSrcs={BAD_SRCS} logoURI={list.logoURI} size="12px" />}
               >
                 {t('via')} {list.name}
               </Tag>
