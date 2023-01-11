@@ -269,6 +269,12 @@ export function SmartSwapForm() {
             commonBasesType={CommonBasesType.SWAP_LIMITORDER}
           />
 
+          {isAccessTokenSupported && inputCurrency.isToken && (
+            <Box>
+              <AccessRisk token={inputCurrency} />
+            </Box>
+          )}
+
           <AutoColumn justify="space-between">
             <AutoRow justify={isExpertMode ? 'space-between' : 'center'} style={{ padding: '0 1rem' }}>
               <SwapUI.SwitchButton
@@ -301,9 +307,9 @@ export function SmartSwapForm() {
             commonBasesType={CommonBasesType.SWAP_LIMITORDER}
           />
 
-          {isAccessTokenSupported && currencies[Field.OUTPUT]?.isToken && (
+          {isAccessTokenSupported && outputCurrency?.isToken && (
             <Box>
-              <AccessRisk token={currencies[Field.OUTPUT]} />
+              <AccessRisk token={outputCurrency} />
             </Box>
           )}
 
