@@ -1887,12 +1887,6 @@
   "Recommend choosing \"MAX\" to renew your staking position in order to keep similar yield boost.": "Recommend choosing \"MAX\" to renew your staking position in order to keep similar yield boost.",
   "%riskLevel% Risk": "%riskLevel% Risk",
   "Scanning Risk": "Scanning Risk",
-  "Please wait until we scan the risk for %symbol% token": "Please wait until we scan the risk for %symbol% token",
-  "scanning...": "scanning...",
-  "scan risk": "scan risk",
-  "The scan result is provided by 3rd parties and may not cover every token. Therefore the result is for reference only, do NOT take it as investment or financial advice. Always DYOR!": "The scan result is provided by 3rd parties and may not cover every token. Therefore the result is for reference only, do NOT take it as investment or financial advice. Always DYOR!",
-  "Powered by": "Powered by",
-  "Hashdit.": "Hashdit.",
   "Add to Wallet": "Add to Wallet",
   "Add %asset% to Wallet": "Add %asset% to Wallet",
   "After Burning starts at %burnStartTime%. You need to renew your fix-term position, to initiate a new lock or convert your staking position to flexible before it starts. Otherwise all the rewards will be burned within the next 90 days.": "After Burning starts at %burnStartTime%. You need to renew your fix-term position, to initiate a new lock or convert your staking position to flexible before it starts. Otherwise all the rewards will be burned within the next 90 days.",
@@ -2075,5 +2069,13 @@
   "Expired Order": "Expired Order",
   "There is %amount% CAKE in the proxy booster contract. In order to harvest that amount you should withdraw, deposit or harvest one of the boosted farms.": "There is %amount% CAKE in the proxy booster contract. In order to harvest that amount you should withdraw, deposit or harvest one of the boosted farms.",
   "To provide stable estimates, APR figures are calculated once per day on the farm page. For real time APR, please visit the": "To provide stable estimates, APR figures are calculated once per day on the farm page. For real time APR, please visit the",
-  "Info Page": "Info Page"
+  "Info Page": "Info Page",
+  "Token Risk Scanning": "Token Risk Scanning",
+  "Automatic risk scanning for the selected token": "Automatic risk scanning for the selected token",
+  "Risk scan results are provided by a third party": "Risk scan results are provided by a third party",
+  "It is a tool for indicative purposes only to allow users to check the reference risk level of a BNB Chain Smart Contract. Please do your own research - interactions with any BNB Chain Smart Contract is at your own risk.": "It is a tool for indicative purposes only to allow users to check the reference risk level of a BNB Chain Smart Contract. Please do your own research - interactions with any BNB Chain Smart Contract is at your own risk.",
+  "Risk scanning failed.": "Risk scanning failed.",
+  "Press the button to retry.": "Press the button to retry.",
+  "Learn more about risk rating": "Learn more about risk rating",
+  "Unknown": "Unknown"
 }
